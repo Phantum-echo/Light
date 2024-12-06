@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> React</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    
+    <!-- <div id="main">
+
+        <div id="box" draggable="true">
+
+        </div>
+        <div class="sunTwo" id="box" draggable="true">
+
+        </div>
+    </div>
+
+    <script>
+        const sunLight=()=> {
+            let sun=document.getElementById('box')
+            let sunTwo=document.getElementsByClassName('sunTwo')[0]
+
+            sun.addEventListener("mouseenter",()=>{
+                sun.style.boxShadow="10px 10px 100px 10px yellow";
+                sun.style.backgroundcolor="yellow"
+                
+            })
+            sun.addEventListener("click",()=>{
+                sun.style.boxShadow="10px 10px 100px 10px gray";
+                sun.style.backgroundcolor="gray"
+            })
+            
+            sun.addEventListener("dbclick",()=> {
+                sunTwo.style.boxShadow="10px 10px 100px 10px yellow";
+                sunTwo.style.backgroundColor="yellow"
+            })
+            sun.addEventListener("click",()=> {
+                sunTwo.style.boxShadow="10px 10px 100px 10px yellow";
+                sunTwo.style.backgroundColor="gray"
+            })
+            
+        }
+        sunLight()
+    </script> -->
+
+    <div class="section">
+        <div id="box" class="light"></div>
+        <div id="bo" class="light"></div>
+        <div id="b" class="light"></div>
+    </div>
+
+    <script>
+        const trafficLight=()=>{
+            let box = document.getElementById('box')
+            let bo = document.getElementById('bo')
+            let b = document.getElementById('b')
+
+            box.addEventListener("mouseenter",()=>{
+                box.style.backgroundColor="red"
+            })
+            box.addEventListener("mouseleave",()=>{
+                box.style.backgroundColor="grey"
+            })
+            bo.addEventListener("mouseenter",()=>{
+                bo.style.backgroundColor="yellow"
+            })
+            bo.addEventListener("mouseleave",()=>{
+                bo.style.backgroundColor="grey"
+            })
+            b.addEventListener("mouseenter",()=>{
+                b.style.backgroundColor="green"
+            })
+            b.addEventListener("mouseleave",()=>{
+                b.style.backgroundColor="grey"
+            })
+            
+        }
+        trafficLight()
+    </script>
+</body>
+</html>
